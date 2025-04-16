@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+
+.text h1,
+.text h2,
+.text h3 {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #0077ff;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-image: linear-gradient(to right, magenta, cyan) 1;
+}
