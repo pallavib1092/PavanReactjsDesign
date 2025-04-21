@@ -1,9 +1,16 @@
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 4rem;
+  padding: 4rem 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.text {
+  flex: 1;
+  min-width: 250px;
+  justify-content: space-around;
 }
 
 .text h1,
@@ -11,16 +18,40 @@
 .text h3 {
   margin: 0.5rem 0;
   font-weight: bold;
+  color: var(--text); 
 }
 
 .highlight {
   color: #0077ff;
 }
 
-.image img {
-  width: 200px;
-  height: 200px;
+.profile-pic-wrapper {
+  padding: 5px;
   border-radius: 50%;
-  border: 5px solid;
-  border-image: linear-gradient(to right, magenta, cyan) 1;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  display: inline-block;
+  justify-content: space-around;
+}
+
+.profile-pic-wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  border: 3px solid white;
+  justify-content: space-around;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .profile-pic-wrapper {
+    margin-top: 1rem;
+  }
 }

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import TechStack from './components/TechStack';
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 // import About from './components/About';
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
@@ -28,9 +31,10 @@ class App extends Component {
       <div className={darkMode ? 'app dark' : 'app'}>
         <Navbar darkMode={darkMode} toggleDarkMode={this.toggleDarkMode} />
        <Hero /> 
-       {/*   <About />
-        <Projects />
-        <Skills />
+       <TechStack />
+           <Projects />
+           <Footer/>
+   {/*     <Skills />
         <Contact /> */}
       </div>
     );

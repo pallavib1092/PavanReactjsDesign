@@ -11,7 +11,7 @@ class Hero extends Component {
           <h2>My name is <span className="highlight">Pavan MG</span></h2>
           <h3>I build things for web</h3>
         </div>
-        <div className="image">
+        <div className="profile-pic-wrapper">
           <img src={"https://static.vecteezy.com/system/resources/previews/019/900/322/non_2x/happy-young-cute-illustration-face-profile-png.png"} alt="Profile" />
         </div>
       </section>
